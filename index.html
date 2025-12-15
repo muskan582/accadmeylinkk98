@@ -5,15 +5,18 @@
 <title>MEHTA IS BACK | Join Now</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- META PIXEL -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
+n.queue=[];
+t=b.createElement(e);t.async=!0;
+t.src=v;
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)
+}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
 fbq('init', '1690539175237677');
 fbq('track', 'PageView', { uuid: "3d64aa18-846b-410b-b3b5-e7f508687a26" });
@@ -25,66 +28,105 @@ src="https://www.facebook.com/tr?id=1690539175237677&ev=PageView&noscript=1"/>
 </noscript>
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
 body{
-    font-family:Poppins,Arial,sans-serif;
-    background:#ffffff;
-    text-align:center;
+  font-family:Poppins, Arial, sans-serif;
+  background:#ffffff;
+  text-align:center;
 }
+
+/* HEADER */
 .header{
-    width:100vw;
-    background:#00AEEF;
-    color:white;
-    padding:14px 0;
-    font-size:16px;
-    font-weight:600;
-    margin-bottom:18px;
+  width:100vw;
+  background:#00AEEF;
+  color:white;
+  padding:14px 0;
+  font-size:16px;
+  font-weight:600;
+  margin-bottom:18px;
 }
+
+/* PROFILE IMAGE */
 .icon{
-    width:150px;
-    height:150px;
-    border-radius:50%;
-    object-fit:cover;
-    margin:20px auto;
-    display:block;
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  object-fit:cover;
+  margin:20px auto;
+  display:block;
 }
-.title{ font-size:28px;font-weight:bold; }
-.members{ font-size:18px;margin:8px 0;color:#444; }
-.emoji{ font-size:22px;margin:12px 0; }
+
+/* TEXT */
+.title{
+  font-size:28px;
+  font-weight:700;
+}
+
+.members{
+  font-size:18px;
+  margin:8px 0;
+  color:#444;
+}
+
+.emoji{
+  font-size:22px;
+  margin:12px 0;
+}
+
 .description{
-    font-size:18px;
-    line-height:1.55;
-    color:#333;
-    margin:14px auto;
-    max-width:300px;
+  font-size:18px;
+  line-height:1.55;
+  color:#333;
+  margin:14px auto;
+  max-width:300px;
 }
+
+/* COUNTDOWN */
 .countdown{
-    font-size:24px;
-    font-weight:bold;
-    color:#d80000;
-    margin:20px 0;
+  font-size:24px;
+  font-weight:700;
+  color:#d80000;
+  margin:20px 0;
 }
+
+/* CTA BUTTON */
 .telegram-link{
-    background:#0088cc;
-    color:white;
-    max-width:250px;
-    padding:15px;
-    display:block;
-    margin:12px auto;
-    font-size:20px;
-    border-radius:12px;
-    font-weight:bold;
-    text-decoration:none;
+  background:#0088cc;
+  color:white;
+  max-width:250px;
+  padding:15px;
+  display:block;
+  margin:12px auto;
+  font-size:20px;
+  border-radius:12px;
+  font-weight:700;
+  text-decoration:none;
 }
-.note{ font-size:14px;margin-top:10px;color:#666; }
+
+/* NOTE */
+.note{
+  font-size:14px;
+  margin-top:10px;
+  color:#666;
+}
+
+/* 🔽 CREDIT LINE (FIXED AS YOU ASKED) */
 .maintained{
-    margin:25px 0;
-    font-size:18px;
+  margin:22px 0 10px;
+  font-size:11px;       /* VERY SMALL */
+  color:#000000;       /* BLACK */
+  opacity:0.8;
 }
+
 .maintained a{
-    color:#007BFF;
-    font-weight:bold;
-    text-decoration:none;
+  color:#000000;       /* BLACK LINK */
+  font-weight:500;
+  text-decoration:none;
 }
 </style>
 </head>
@@ -92,35 +134,53 @@ body{
 <body>
 
 <div class="header">
-Don't have Telegram?
-<a href="https://telegram.me/+TRlJl628l-FkMWE9" style="color:white;text-decoration:underline;" target="_blank">
-Download Telegram
-</a>
+  Don't have Telegram?
+  <a href="https://telegram.me/+TRlJl628l-FkMWE9" target="_blank"
+     style="color:white;text-decoration:underline;">
+     Download Telegram
+  </a>
 </div>
 
 <img src="http://thinkbigx.sbs/assets/mehhtaaaa.jpg" class="icon">
 
 <h2 class="title">MEHTA IS BACK</h2>
 <p class="members">89,097 members</p>
-<p class="emoji">♻️ Sebi Registered : INH000015710<br>We are SEBI REGISTERED ADVISORY</p>
 
-<p class="description">Smart Moves. Strong Returns.<br>Your Edge in the Market.</p>
+<p class="emoji">
+♻️ Sebi Registered : INH000015710<br>
+We are SEBI REGISTERED ADVISORY
+</p>
 
-<p class="countdown">Invitation closes in <span id="timer">10</span>s ⏳</p>
+<p class="description">
+Smart Moves. Strong Returns.<br>
+Your Edge in the Market.
+</p>
+
+<p class="countdown">
+Invitation closes in <span id="timer">10</span>s ⏳
+</p>
 
 <a href="https://t.me/+16bHyB2wKtNkMTM9"
-class="telegram-link"
-onclick="fbq('track', 'JoinClick', {uuid:'3d64aa18-846b-410b-b3b5-e7f508687a26'})">
+   class="telegram-link"
+   onclick="fbq('track','JoinClick',{uuid:'3d64aa18-846b-410b-b3b5-e7f508687a26'})">
 View in Telegram 🚀
 </a>
 
 <p class="note">Instant access if Telegram is installed.</p>
-<p class="maintained">Ads Managed by <a href="https://telegram.me/+TRlJl628l-FkMWE9">@Nexgroww_agency</a></p>
+
+<p class="maintained">
+Ads Managed by <a href="https://telegram.me/+TRlJl628l-FkMWE9">@Nexgroww_agency</a>
+</p>
 
 <script>
 let sec = 10;
 const t = document.getElementById("timer");
-setInterval(()=>{ if(sec > 0){ sec--; t.textContent = sec; } },1000);
+setInterval(()=>{
+  if(sec > 0){
+    sec--;
+    t.textContent = sec;
+  }
+},1000);
 </script>
 
 </body>
